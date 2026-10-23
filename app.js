@@ -7,7 +7,7 @@ document.getElementById('start').addEventListener('click', async () => {
     stage.replaceChildren(player);
     status.textContent = '正在加载游戏，请稍候…';
     await player.ruffle().load({url: './game/saha.swf'});
-    status.textContent = '游戏已载入。点击游戏画面后使用键盘操作。';
+    status.textContent = '文件已载入，首次场景初始化可能需要 1–2 分钟。进入场景后点击画面使用键盘操作。';
     player.focus();
   } catch (error) {
     status.textContent = `加载失败：${error.message} 请刷新页面重试。`;
@@ -19,3 +19,4 @@ document.getElementById('fullscreen').addEventListener('click', async () => {
     else await stage.requestFullscreen();
   } catch { status.textContent = '当前浏览器不支持全屏，请使用浏览器缩放。'; }
 });
+

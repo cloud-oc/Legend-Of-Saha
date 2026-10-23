@@ -27,3 +27,7 @@ Ruffle 许可见 ruffle/LICENSE_MIT 和 ruffle/LICENSE_APACHE。
 ## 兼容性
 
 Flash 通过模拟器运行，兼容性以实际游玩为准。尚未完成全流程通关或存档恢复测试。
+
+已在 Chrome + Ruffle 默认 wgpu-webgl 渲染器下验证进入初始 2.5D 场景。首次初始化可能需要 1–2 分钟。旧 Mochi 广告域名由 Ruffle 默认阻止，不影响初始场景进入。
+
+SWF SHA-256: 833E40B01F605FF6B1B860EC631D258657A42B45F96EEA11CD4AF8D4A95CF824
